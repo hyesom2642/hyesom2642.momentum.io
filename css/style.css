@@ -1,0 +1,183 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #b39ddb;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  background-color: #d1c4e9;
+  border-radius: 15px;
+  height: 85vh;
+}
+.section1 {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== 유저 로그인 & 프로필 ===== */
+.user__img {
+  width: 200px;
+  height: 200px;
+}
+.section1 .user__img > img {
+  margin-top: 20%;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+#user__name__form {
+  margin-top: 20%;
+  text-align: center;
+}
+#user__name__input {
+}
+#user__name__submit {
+  width: 50px;
+  vertical-align: middle;
+}
+#user__name {
+  margin-top: 50px;
+  font-family: "Jua", sans-serif;
+  font-size: 50px;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+
+/* ===== 시계 ===== */
+.clock__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18.5vw;
+  height: 55vh;
+}
+#clock__text {
+  margin-top: 30px;
+  font-family: "Jua", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.clock {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/clock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.hand {
+  width: 45%;
+  height: 6px;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.clock__hour {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/시침.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clock__minutes {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/분침.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clock__seconds {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/초침.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section2 {
+  width: 50vw;
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  color: #fff;
+}
+.section2 h1 {
+  font-size: 3rem;
+  margin-top: 10%;
+}
+.section2 #todo__form {
+}
+.section2 #todo__form #todo__input {
+  margin: 20px 0;
+}
+
+.section3 {
+  width: 25vw;
+}
+.section3 h1 {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Jua", sans-serif;
+}
+
+/* ===== quote ===== */
+.quote__bg {
+  height: 50px;
+  background-image: url(../img/박명수.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 10px;
+}
+.quote__container {
+  position: relative;
+  padding: 30px 15px;
+  color: #fff;
+  font-family: "Jua", sans-serif;
+}
+.quote__container p:first-child {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.quote__container p:last-child {
+  font-size: 15px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* ===== weather ===== */
+#weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+  font-family: "Jua", sans-serif;
+}
+#weather > span:first-child {
+  margin: 20px 0;
+}
+#weather > span:last-child {
+}

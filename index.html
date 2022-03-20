@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- ===== google-font ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <section class="box section1">
+        <div class="user__img">
+            <img src="" />
+        </div>
+        <form id="user__name__form">
+            <input required type="text" id="user__name__input" placeholder="이름을 입력하세요." />
+            <input id="user__name__submit" type="image" src="./img/pngwing.com.png" value="" />
+        </form>
+        <h1 id="user__name" class="hidden"></h1>
+
+        <div class="clock__container">
+            <h1 id="clock__text">00:00:00</h1>
+            <div class="clock">
+                <div class="hand clock__hour"></div>
+                <div class="hand clock__minutes"></div>
+                <div class="hand clock__seconds"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== todolist ===== -->
+    <section class="box section2">
+        <h1>TO DO LIST</h1>
+        <form id="todo__form">
+            <input id="todo__input" type="text" placeholder="내용을 쓴 후 Enter를 치세요." required />
+        </form>
+        <ul id="todo__list"></ul>
+    </section>
+
+    <section class="box section3">
+        <h1>오늘의 명언</h1>
+        <div class="quote__container">
+            <p></p>
+            <p></p>
+        </div>
+        <h1>오늘의 날씨</h1>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <script src="./js/userProfile.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quote.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+</html>
